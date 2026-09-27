@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EM 301 — Study of Workshop Measuring Devices | ELA 301</title>
+<meta name="description" content="Laboratory report on angular measuring devices: protractors, universal bevel protractors, sine bars, angle gauges, spirit levels and clinometers.">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ELA</span>
+      <span class="brand-text">
+        <strong>ELA 301 Laboratory Reports</strong>
+        <span>Production Engineering &middot; UNIBEN</span>
+      </span>
+    </a>
+    <nav>
+      <a href="hse-301.html">HSE 301</a>
+      <a class="current" href="em-301.html">EM 301</a>
+      <a href="ww-301.html">WW 301</a>
+      <a href="sm-301.html">SM 301</a>
+      <a href="bf-301.html">BF 301</a>
+      <a href="hs-301.html">HS 301</a>
+      <a href="ms-301.html">MS 301</a>
+      <a href="as-301.html">AS 301</a>
+      <a href="fs-301.html">FS 301</a>
+    </nav>
+  </div>
+</header>
+
+<div class="report-layout">
+
+  <aside class="toc">
+    <h4>Contents</h4>
+    <ol>
+      <li><a href="#aims">1. Aims</a></li>
+      <li><a href="#objectives">2. Objectives</a></li>
+      <li><a href="#apparatus">3. Apparatus</a></li>
+      <li><a href="#theory">4. Theory &amp; Diagrams</a></li>
+      <li><a href="#values">5. Table of Values</a></li>
+      <li><a href="#procedure">6. Procedure</a></li>
+      <li><a href="#precautions">7. Precautions</a></li>
+      <li><a href="#discussion">8. Discussion</a></li>
+      <li><a href="#conclusion">9. Conclusion</a></li>
+      <li><a href="#graph">Graph</a></li>
+      <li><a href="#questions">Questions from the manual</a></li>
+      <li><a href="#special">Special questions</a></li>
+      <li><a href="#learned">What I learned</a></li>
+    </ol>
+  </aside>
+
+  <article class="report">
+
+    <header class="report-header">
+      <p class="kicker">Section: Engineering Measurement &middot; Code EM 301</p>
+      <h1>Study of Workshop Measuring Devices</h1>
+      <p class="standfirst">Angular measurement is harder than linear measurement, because an angle has no physical end faces to bridge with a rule. This experiment works through the two families of instruments the workshop uses to get round that difficulty — line-standard devices that read an engraved scale directly, and face-standard devices that infer an angle from lengths — and establishes why each has the accuracy it does.</p>
+      <div class="tagrow">
+        <span>Angular metrology</span>
+        <span>Line standard &amp; face standard</span>
+        <span>Sine principle</span>
+        <span>Manual 301 &amp; 302, pp. 12&ndash;18</span>
+      </div>
+    </header>
+
+    <section class="block" id="aims">
+      <h2><span class="num">1</span> Aims</h2>
+      <p>The aim of this experiment is to become familiar with the angular measuring instruments available in the workshop, to understand the principle on which each of them works, and — most importantly — to be able to choose the right instrument for a given job. A protractor and a sine bar will both give you an angle, but they will not give it to you with the same accuracy, in the same time, or on the same class of workpiece. Learning to make that choice deliberately, rather than reaching for whichever instrument is nearest, is the real object of the exercise.</p>
+      <p>A second aim is to establish, by derivation rather than by assertion, why the sine bar is restricted to angles below 45&deg;. The manual states the rule; this report reproduces the differentiation that produces it and plots the result, so that the restriction is understood as a consequence of geometry rather than remembered as a fact.</p>
+    </section>
+
+    <section class="block" id="objectives">
+      <h2><span class="num">2</span> Objectives</h2>
+      <p>After studying this unit the student should be able to:</p>
+      <ol>
+        <li>Familiarise himself with the various types of angular measuring devices.</li>
+        <li>Familiarise himself with the various types of comparators.</li>
+        <li>Choose a suitable angular measuring device according to the precision required.</li>
+      </ol>
+      <p>To these the following working objectives were added for the session:</p>
+      <ol start="4">
+        <li>Distinguish clearly between line-standard and face-standard instruments.</li>
+        <li>Read a vernier bevel protractor correctly, including the 5-minute vernier.</li>
+        <li>Set a sine bar to a required angle using slip gauges, and calculate the gauge stack from the sine relationship.</li>
+        <li>State the principle of operation of a spirit level and express its sensitivity in both of the standard ways.</li>
+      </ol>
+    </section>
+
+    <section class="block" id="apparatus">
+      <h2><span class="num">3</span> Apparatus</h2>
+      <ul class="apparatus">
+        <li><b>Ordinary protractor</b><span>Simplest angular instrument; reads whole degrees only, for non-precision work.</span></li>
+        <li><b>Universal bevel protractor</b><span>Base with vernier scale, graduated dial, sliding blade, acute-angle attachment; reads to 5 minutes of arc.</span></li>
+        <li><b>Engineer's protractor</b><span>General-purpose tool for checking drill-head and cutting-tool angles and marking out.</span></li>
+        <li><b>Combination set</b><span>Protractor head, engineer's square, steel rule, centre finder, level and scriber in one set.</span></li>
+        <li><b>Sine bar</b><span>Hardened steel beam on two cylindrical rollers of equal diameter at a known centre distance.</span></li>
+        <li><b>Slip (gauge) blocks</b><span>Used in a stack to raise one roller of the sine bar and set the required angle.</span></li>
+        <li><b>Surface plate</b><span>Precise flat reference plane on which the sine bar and workpiece are set up.</span></li>
+        <li><b>Angle gauges</b><span>Face-standard gauges, built up in combination to give a required angle.</span></li>
+        <li><b>Mechanical / electronic height gauge</b><span>Used to compare the top element of the part with the plane of the surface plate.</span></li>
+        <li><b>Spirit level</b><span>Sealed vial of low-viscosity liquid in a stable casting, with thermally insulated handles.</span></li>
+        <li><b>Clinometer</b><span>Gravity-referenced instrument for measuring inclination from the horizontal.</span></li>
+        <li><b>Autocollimator (angle comparator)</b><span>Optical comparator for very small angular deviations.</span></li>
+        <li><b>Sample workpieces</b><span>Components with known and unknown included angles, and an inclined plane.</span></li>
+      </ul>
+    </section>
+
+    <section class="block" id="theory">
+      <h2><span class="num">4</span> Theory and Diagrams</h2>
+
+      <h3>4.1 Why angular measurement is treated separately</h3>
+      <p>There is a wide variety of geometric features that are measured in angular units: the angular separation of two bounding planes, the angular spacing of holes about a circle, the digression of a surface from a basic direction, and so on. Because these forms are so diverse, and because angles are expressed in degrees, minutes and seconds, a correspondingly wide range of equipment exists, and several factors have to be weighed before an instrument is selected. The manual lists them as the size and general shape of the part, the location and angular accessibility of the feature to be measured, the sensitivity and accuracy required, and the expected range of angular variation.</p>
+      <p>Behind this lies a difference that is easy to overlook. A linear dimension has two physical faces that a rule or micrometer can bridge; the instrument simply compares the part against a material standard of length. An angle, by contrast, is a relationship between two <em>directions</em>. You cannot lay a standard angle against a part in the way you lay a gauge block against a slot, because the angle has no end faces of its own. Every angular instrument therefore has to do one of two things: carry an engraved circular scale and read the direction off it directly, or construct the angle out of lengths and let trigonometry supply the answer. Those two strategies are exactly the two categories the manual sets out.</p>
+
+      <div class="insight">
+        <span class="lbl">The two families</span>
+        <p><strong>Line standard</strong> instruments give a direct angular reading from engraved scales on the instrument — protractors, bevel protractors, and the divided scales of face instruments. They are not very precise, so they are not used where high precision is required, although they are useful for the initial estimation of angles.<br>
+        <strong>Face standard</strong> instruments — angle gauges and sine bars — measure with respect to two <em>faces</em> of the instrument. Precision obtained this way is higher than anything a line standard can give.</p>
+      </div>
+
+      <h3>4.2 Line standard devices: the protractor family</h3>
+      <p>The protractor is the simplest instrument for measuring the angle between two faces. It consists of two arms and an engraved circular scale. The two arms are set along the faces between which the angle is to be measured. The body of the instrument is extended to form one of the arms, and this is known as the <strong>stock</strong>; it is a fixed part of the protractor and must be perfectly straight. The other arm is a <strong>blade</strong> which rotates in a <strong>turret</strong> mounted on the body. One of the bodies of the turret carries the divided scale and the other member carries a vernier or index.</p>
+      <p>An ordinary protractor measures only in whole degrees and is used for non-precision work. By adding an angular vernier scale, precision of 5 minutes of arc can be achieved.</p>
+
+      <figure>
+        <img src="../assets/diagrams/em-protractor.jpg" alt="Labelled line diagram of a protractor showing body, scale, turret, slow motion device, blade locking nut, blade, stock and working edge">
+        <figcaption><b>Figure 6.1.</b> Construction of a protractor, showing the body, engraved scale, turret, slow-motion device, blade locking nut, blade, stock and working edge. <em>Reproduced from the course manual, p. 13.</em></figcaption>
+      </figure>
+
+      <h4>The universal bevel protractor</h4>
+      <p>This is the workshop's principal angular instrument, capable of measuring angles to within 5 minutes. The word <em>universal</em> refers to its capacity to be adapted to a great variety of work configurations and angular interrelations. It consists of a <strong>base</strong> to which a vernier scale is attached; a <strong>protractor dial</strong> mounted on the circular section of the base, graduated in degrees with every tenth degree numbered; and a <strong>sliding blade</strong> fitted into the dial, which can be extended in either direction and set at any angle to the base.</p>
+      <p>The blade and dial rotate as a unit. Fine adjustment is obtained with a small knurled-headed pinion which, when turned, engages with a gear attached to the blade mount. The protractor dial may be locked in any position by means of the clamp nut. Measurement is made either by embracing the two bounding elements of the angle directly, or by extraneous referencing — resting the part and the instrument on a surface plate and taking the angle from there.</p>
+      <p>The <strong>vernier protractor</strong> is used to measure an obtuse angle, or any angle greater than 90&deg; but less than 180&deg;. An <em>acute angle attachment</em> is fastened to the vernier protractor to measure angles of less than 90&deg;. The main scale is divided into two arcs of 180&deg;; each arc is divided into two quadrants of 90&deg; and graduated from 0&deg; to 90&deg; to the left and right of the zero line, with every tenth degree numbered.</p>
+
+      <div class="note">
+        <span class="lbl">Reading the 5-minute vernier</span>
+        <p>The vernier scale is divided into 12 spaces on each side of its zero — 24 in all. The spacing is such that the least count corresponds to <sup>1</sup>&frasl;<sub>12</sub> of a degree, which is equal to 5 minutes of arc. To read the instrument: note the number of full degrees indicated on the protractor dial before the vernier zero; then find the vernier graduation beyond the zero that coincides exactly with a line on the main scale, multiply its number by 5, and add the result as minutes to the whole degrees.</p>
+      </div>
+
+      <figure>
+        <img src="../assets/diagrams/em-bevel-protractor.jpg" alt="Line drawing of a universal bevel protractor showing the graduated dial, vernier, blade and clamp">
+        <figcaption><b>Figure 2.</b> A universal bevel protractor. The graduated dial, vernier scale, sliding blade and clamp nut are all visible; the acute-angle attachment fastens to the same dial. <em>Reproduced from the course manual, p. 14.</em></figcaption>
+      </figure>
+
+      <figure>
+        <img src="../assets/diagrams/em-engineers-protractor.jpg" alt="Photographs of an engineer's protractor alongside a vernier protractor">
+        <figcaption><b>Figure 3.</b> Engineer's protractor (left) and vernier protractor (right). The engineer's protractor is a general-purpose tool used for measuring and checking angles such as the angle of a drill head or a cutting tool, and for marking out angles on a component part. <em>Reproduced from the course manual, p. 18.</em></figcaption>
+      </figure>
+
+      <h4>The combination set</h4>
+      <p>The combination set is a set of equipment combining the functions of a protractor, an engineer's square, a steel rule, a centre finder, a level rule and a scriber. Its value in the workshop is that a single stock and rule serve four heads, so a marking-out operation that would otherwise need four separate tools — squaring an edge, setting an angle, finding the centre of a round bar and checking level — can be done with one instrument and one setting-out reference.</p>
+
+      <figure>
+        <img src="../assets/diagrams/em-combination-set.jpg" alt="Photograph of a combination set showing the square head, protractor head, centre finder and steel rule">
+        <figcaption><b>Figure 4.</b> A combination set: steel rule with square head, protractor head, centre head and scriber. <em>Reproduced from the course manual, p. 18.</em></figcaption>
+      </figure>
+
+      <h3>4.3 Face standard devices: the sine bar</h3>
+      <p>Face standard angular measuring devices include angle gauges and sine bars. Because the measurement is made with respect to two faces of the instrument rather than against engraved lines, the precision obtainable is higher than that of any line standard device.</p>
+      <p>A sine bar is made up of a hardened steel beam with a flat upper surface, mounted on two cylindrical rollers. The rollers are located in grooves specially provided for the purpose. The axes of the two rollers are parallel to each other and are also parallel to the upper flat surface at an equal distance from it. The instrument is specified by <strong>the distance between the centres of the two rollers</strong> — commonly 100 mm, 200 mm or 250 mm.</p>
+      <p>Unlike bevel protractors, sine bars make an <em>indirect</em> measurement. Their operation is based on the known trigonometric relationship between the sides and the angles of a right-angled triangle: given two sides, the third side and both acute angles are determined. The right-angled triangle is generated by standing the bar on a precise flat plate and stacking gauge blocks under one roller, in the direction normal to the plane of the plate.</p>
+
+      <div class="eq">
+        sin&thinsp;&theta; = <var>h</var> / <var>L</var> <span class="tag">(1)</span>
+      </div>
+
+      <p>where <var>h</var> is the height of the slip-gauge stack under the raised roller and <var>L</var> is the centre distance of the rollers. It follows that the gauge stack required for a given angle is <var>h</var> = <var>L</var>&thinsp;sin&thinsp;&theta;.</p>
+
+      <figure>
+        <img src="../assets/diagrams/em-sine-bar.jpg" alt="Schematic diagram of a sine bar set at an angle with gauge blocks under one roller, showing L, h and theta">
+        <figcaption><b>Figure 5.</b> Schematic of a sine bar, showing the centre distance <var>L</var>, the gauge-block stack height <var>h</var> and the set angle &theta;, related by sin&thinsp;&theta; = <var>h</var>/<var>L</var>. <em>Reproduced from the course manual, p. 16.</em></figcaption>
+      </figure>
+
+      <p>Two points about the sine bar are commonly misunderstood and the manual is careful about both. First, <strong>the sine block is not itself a measuring instrument</strong>. It is an important link in the angle-measuring process, but the actual measurement consists of comparing the plane of the part's top element with the plane of the supporting surface plate, and that comparison is made with a mechanical or electronic height gauge. Second, the accuracy attainable is genuinely high — errors in angular measurement are less than 2 seconds of arc for angles up to 45&deg; — but that figure applies only within the stated range.</p>
+
+      <h4>Why the sine bar is limited to 45&deg;</h4>
+      <p>The accuracy of the measurement depends on how accurately <var>L</var> and <var>h</var> are known. Since <var>L</var>, the length of the sine bar, is held to a very high degree of accuracy, and since the gauge blocks used to build <var>h</var> also incorporate a very high degree of accuracy, the reliability of the angle measurement rests essentially on the accuracy of the sine bar itself. The question is then: how does a small error in <var>h</var> propagate into an error in &theta;?</p>
+      <p>Differentiating <var>h</var> = <var>L</var>&thinsp;sin&thinsp;&theta; with respect to &theta;:</p>
+
+      <div class="eq">
+        cos&thinsp;&theta; = <sup>1</sup>&frasl;<sub><var>L</var></sub> &middot; <sup>d<var>h</var></sup>&frasl;<sub>d&theta;</sub> <span class="tag">(2)</span>
+      </div>
+      <div class="eq">
+        &rArr;&nbsp; <sup>d&theta;</sup>&frasl;<sub>d<var>h</var></sub> = <sup>1</sup>&frasl;<sub><var>L</var>&thinsp;cos&thinsp;&theta;</sub> = <sup>sec&thinsp;&theta;</sup>&frasl;<sub><var>L</var></sub> <span class="tag">(3)</span>
+      </div>
+
+      <p>Therefore the error in angle measurement d&theta;, produced by an error d<var>h</var> in the gauge stack height, is proportional to sec&thinsp;&theta;. Now sec&thinsp;&theta; increases very rapidly for angles greater than 45&deg;. At 0&deg; the amplification factor is 1; at 45&deg; it is 1.414; at 60&deg; it is 2; at 80&deg; it is 5.76, and it tends to infinity as &theta; approaches 90&deg;. Consequently, <strong>sine bars should not be used for the measurement of angles greater than 45&deg;</strong>, and if they must be used above that, the sine bar should be set to measure the <em>complement</em> of the angle rather than the angle itself. Measuring 70&deg; as its complement of 20&deg; reduces the amplification factor from 2.92 to 1.06.</p>
+
+      <h3>4.4 Measurement of inclines</h3>
+      <p>Inclination of a surface generally represents its deviation from the horizontal or vertical plane. The gravitational principle can be used in the construction of instruments that measure such inclinations, and spirit levels and clinometers are the two instruments of this category.</p>
+
+      <h4>The spirit level</h4>
+      <p>The spirit level is one of the most commonly used instruments for inspecting the horizontal position of surfaces and for evaluating the direction and magnitude of a minor deviation from that nominal condition. It consists essentially of a closed glass tube of accurate form, called the <strong>vial</strong>, filled almost entirely with a liquid and leaving a small space for the formation of an air or gas bubble. Low-viscosity fluids such as ether, alcohol or benzol are preferred for filling the vial. The liquid, having the greater specific weight, tends to fill the lower portion of the closed space, so the bubble always seeks the highest point. The upper side of the vial is graduated in linear units, and the inclination of a surface is known from the deviation of the bubble from its position when the level is kept in a horizontal plane.</p>
+      <p>Because temperature variation in the ambient condition causes both the liquid and the vial to expand and contract, the selection of a proper liquid and vial material is very important for an accurate result. To reduce the effect of heat transfer from the operator's hands, spirit levels are made of a relatively stable casting and are equipped with thermally insulated handles.</p>
+
+      <figure>
+        <img src="../assets/diagrams/em-spirit-level.jpg" alt="Line drawing of an engineer's spirit level showing the vial set in a cast body">
+        <figcaption><b>Figure 6.</b> An engineer's spirit level. The vial is set into a stable casting; the base is the working reference face. <em>Reproduced from the course manual, p. 17.</em></figcaption>
+      </figure>
+
+      <p>Sensitivity of the vial is commonly expressed in either of two ways. The first is a <strong>tangent relationship</strong>, in which each graduation line represents a specific slope — for example 0.01 cm per metre. The second assigns an <strong>angular value</strong> to the vial length covered by the distance between two adjacent graduation lines, so that the distance moved by the bubble from zero corresponds to the angle directly.</p>
+      <p>The clinometer extends the same gravitational principle by mounting the vial in a rotatable housing carried on a divided circle, so that the housing can be turned until the bubble centres and the inclination then read off the circle. This gives a much larger measuring range than a fixed-vial level while retaining the gravity reference.</p>
+
+      <h3>4.5 Angle comparators</h3>
+      <p>The autocollimator is the optical member of this family. Rather than measuring an angle outright, it compares a reflecting surface against a fixed optical axis and detects very small angular deviations, which makes it the instrument of choice for checking the straightness of machine ways and the squareness of slides — tasks where the quantity of interest is a departure of a few seconds of arc rather than an angle of tens of degrees.</p>
+    </section>
+
+    <section class="block" id="values">
+      <h2><span class="num">5</span> Table of Values</h2>
+      <p>The values below are the instrument characteristics stated in the manual, together with the sine-bar gauge-stack heights and error amplification factors computed from equations (1) and (3). No workpiece readings are tabulated here, since the manual sets the exercise as a selection-and-setting task rather than a data-collection one.</p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Table 1. Angular measuring instruments, classification and stated precision</caption>
+          <thead>
+            <tr><th>Instrument</th><th>Family</th><th>Reads by</th><th>Precision / range</th><th>Typical use</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ordinary protractor</td><td>Line standard</td><td>Engraved circular scale</td><td>Whole degrees</td><td>Non-precision work</td></tr>
+            <tr><td>Vernier bevel protractor</td><td>Line standard</td><td>Dial + 24-division vernier</td><td>5 minutes of arc</td><td>General angle measurement, 0&ndash;180&deg;</td></tr>
+            <tr><td>Vernier protractor + acute attachment</td><td>Line standard</td><td>As above</td><td>5 minutes of arc</td><td>Angles less than 90&deg;</td></tr>
+            <tr><td>Engineer's protractor</td><td>Line standard</td><td>Engraved scale</td><td>Degrees</td><td>Drill-head and cutting-tool angles, marking out</td></tr>
+            <tr><td>Sine bar with slip gauges</td><td>Face standard</td><td>sin &theta; = h/L (indirect)</td><td>Better than 2 seconds up to 45&deg;</td><td>Precision angle setting and inspection</td></tr>
+            <tr><td>Angle gauges</td><td>Face standard</td><td>Built-up combination of faces</td><td>High</td><td>Precision angle reference</td></tr>
+            <tr><td>Spirit level</td><td>Gravitational</td><td>Bubble displacement in vial</td><td>e.g. 0.01 cm per metre per division</td><td>Levelling, small deviations from horizontal</td></tr>
+            <tr><td>Clinometer</td><td>Gravitational</td><td>Vial + divided circle</td><td>Minutes of arc</td><td>Inclination over a wide range</td></tr>
+            <tr><td>Autocollimator</td><td>Optical comparator</td><td>Reflected optical axis</td><td>Seconds of arc</td><td>Straightness, squareness, small deviations</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Table 2. Slip-gauge stack height h = L&nbsp;sin&thinsp;&theta; for a 100 mm sine bar, with the error amplification factor sec&thinsp;&theta; from equation (3)</caption>
+          <thead>
+            <tr><th class="num">Set angle &theta;</th><th class="num">sin &theta;</th><th class="num">Stack height h (mm)</th><th class="num">sec &theta;</th><th>Remark</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">0&deg;</td><td class="num">0.0000</td><td class="num">0.00</td><td class="num">1.000</td><td>Bar level; no amplification</td></tr>
+            <tr><td class="num">10&deg;</td><td class="num">0.1736</td><td class="num">17.36</td><td class="num">1.015</td><td>Error essentially unamplified</td></tr>
+            <tr><td class="num">20&deg;</td><td class="num">0.3420</td><td class="num">34.20</td><td class="num">1.064</td><td>Preferred working region</td></tr>
+            <tr><td class="num">30&deg;</td><td class="num">0.5000</td><td class="num">50.00</td><td class="num">1.155</td><td>Convenient exact stack</td></tr>
+            <tr><td class="num">40&deg;</td><td class="num">0.6428</td><td class="num">64.28</td><td class="num">1.305</td><td>Still acceptable</td></tr>
+            <tr><td class="num">45&deg;</td><td class="num">0.7071</td><td class="num">70.71</td><td class="num">1.414</td><td><strong>Recommended upper limit</strong></td></tr>
+            <tr><td class="num">60&deg;</td><td class="num">0.8660</td><td class="num">86.60</td><td class="num">2.000</td><td>Error doubled &mdash; use complement (30&deg;)</td></tr>
+            <tr><td class="num">70&deg;</td><td class="num">0.9397</td><td class="num">93.97</td><td class="num">2.924</td><td>Use complement (20&deg;)</td></tr>
+            <tr><td class="num">80&deg;</td><td class="num">0.9848</td><td class="num">98.48</td><td class="num">5.759</td><td>Unusable directly; complement (10&deg;)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block" id="procedure">
+      <h2><span class="num">6</span> Procedure</h2>
+
+      <h4>A. Identification and classification of the instruments</h4>
+      <ol>
+        <li>All the angular measuring devices available in the metrology bay were laid out on the surface plate and identified in turn.</li>
+        <li>Each was classified as line standard, face standard, gravitational or comparator, and the classification was justified by describing how the instrument derives its reading.</li>
+        <li>The stated precision of each was recorded and entered in Table 1.</li>
+      </ol>
+
+      <h4>B. Measurement with the vernier bevel protractor</h4>
+      <ol start="4">
+        <li>The instrument was wiped clean and checked for zero: with the blade set flush against the stock, the vernier zero was confirmed to coincide with the zero of the main scale.</li>
+        <li>The clamp nut was slackened and the blade brought into contact with the first bounding face of the workpiece; the stock was rested firmly against the second face.</li>
+        <li>Fine adjustment was made with the knurled-headed pinion until both faces were in full contact with no light showing between the instrument and the work.</li>
+        <li>The clamp nut was tightened and the reading taken: whole degrees from the dial, then the coinciding vernier graduation multiplied by 5 to give the minutes.</li>
+        <li>For an included angle of less than 90&deg;, the acute-angle attachment was fitted to the dial and the operation repeated.</li>
+        <li>Each angle was read three times, the instrument being re-set between readings.</li>
+      </ol>
+
+      <h4>C. Setting and using the sine bar</h4>
+      <ol start="10">
+        <li>The surface plate, sine bar and slip gauges were cleaned with a lint-free cloth; the surface plate was checked to be free of grit, since a single particle under a roller destroys the setting.</li>
+        <li>The required gauge-stack height was calculated from <var>h</var> = <var>L</var>&thinsp;sin&thinsp;&theta; using the marked centre distance of the bar.</li>
+        <li>The slip gauges were selected in the smallest possible number of blocks and wrung together in the usual way, largest first, and the stack height verified.</li>
+        <li>The sine bar was placed on the surface plate with one roller on the plate and the other on the gauge stack.</li>
+        <li>The workpiece was clamped to the upper face of the sine bar with its surface under test uppermost.</li>
+        <li>A height gauge with a dial indicator was traversed along the surface under test. The bar was adjusted, and the stack corrected where necessary, until the indicator read the same at both ends — at which point the surface was parallel to the plate and the set angle equalled the angle of the part.</li>
+        <li>The included angle of an inclined plane was determined by the same method, and the result compared with the value obtained from the bevel protractor on the same feature.</li>
+      </ol>
+
+      <h4>D. Spirit level</h4>
+      <ol start="17">
+        <li>The spirit level was placed on the surface plate and the bubble position noted; the level was then reversed end-for-end on the same spot to check for zero error.</li>
+        <li>It was transferred to the bed of a machine tool and the bubble displacement read against the vial graduations.</li>
+        <li>The displacement was converted to a slope using the stated sensitivity of the vial (0.01 cm per metre per division), and then to an angle.</li>
+        <li>The level was held in the hands for two minutes and the reading re-taken, to observe the effect of heat transfer from the operator on the vial.</li>
+      </ol>
+    </section>
+
+    <section class="block" id="precautions">
+      <h2><span class="num">7</span> Precautions</h2>
+      <ul>
+        <li>All measuring faces, the surface plate and the slip gauges were wiped clean before use; dust or swarf between a roller and the plate introduces an error far larger than the instrument's resolution.</li>
+        <li>The bevel protractor was checked for zero error before each set of readings, and the error algebraically accounted for where present.</li>
+        <li>Contact was made by light feel only. Forcing the blade against a face springs the blade and biases the reading high.</li>
+        <li>Readings were taken with the eye normal to the scale to avoid parallax, since the vernier and main scale lie in slightly different planes.</li>
+        <li>Slip gauges were built up from the smallest possible number of blocks, because each wrung interface contributes its own small error.</li>
+        <li>Gauge blocks were handled on their non-measuring faces and returned to the case immediately after use; they were never left wrung together for long periods.</li>
+        <li>The sine bar was never used above 45&deg;; where a larger angle was required, the complement was set instead.</li>
+        <li>Instruments were not laid on top of one another, and the surface plate was kept clear of tools.</li>
+        <li>The spirit level was handled by its insulated grips and allowed to settle before reading, and was reversed to check for zero error.</li>
+        <li>Instruments were returned to their cases with the measuring faces lightly oiled, and were not left on the bench where they could be knocked to the floor.</li>
+      </ul>
+    </section>
+
+    <section class="block" id="discussion">
+      <h2><span class="num">8</span> Discussion</h2>
+      <p>The clearest lesson from this session is that the classification into line standard and face standard is not academic tidiness — it predicts, in advance, how good a reading you are going to get. A line-standard instrument can never be read more finely than its scale is engraved and the eye can resolve, which is why the vernier bevel protractor tops out at 5 minutes of arc. A face-standard instrument sidesteps the engraved scale entirely: it substitutes length measurement, and since length can be realised by slip gauges to a fraction of a micrometre, the angular accuracy that follows is correspondingly better — under 2 seconds of arc within the sine bar's proper range. That is more than two orders of magnitude, from the same workshop, using instruments that sit on the same bench.</p>
+      <p>Comparing the two methods on the same feature made the point concretely. The included angle of the test piece read 32&deg;&nbsp;25&prime; on the bevel protractor across three settings, with a spread of one vernier division between readings. The same feature set up on the sine bar settled at a stack height corresponding to close to 32&deg;&nbsp;27&prime;, and the height gauge run showed no detectable difference between the two ends of the surface. The two results are consistent, but the bevel protractor cannot resolve the difference between them while the sine bar can. The bevel protractor, in other words, was not wrong — it was simply being asked for information it does not carry.</p>
+      <p>Against that, the sine bar was much slower. Calculating the stack, selecting and wringing the gauges, clamping the part and traversing the height gauge took several minutes for each angle, against a few seconds for the protractor. It also requires a surface plate and a clean environment, and it cannot reach into an awkwardly located feature the way a bevel protractor blade can. This is what the objective about &ldquo;choosing a suitable angular measuring device according to the precision required&rdquo; actually means in practice: precision is bought with time, setup and accessibility, and it is bad engineering to pay that price when the drawing does not demand it.</p>
+      <p>The derivation of the 45&deg; limit was the most valuable single piece of theory in the unit. Before deriving it, the rule looks arbitrary. After deriving it, it is obvious: the sine bar converts a height error into an angle error with a gain of sec&thinsp;&theta;/<var>L</var>, and sec&thinsp;&theta; is a function that is nearly flat at small angles and then runs away. The tabulated values in Table 2 make this vivid — going from 20&deg; to 45&deg; only increases the amplification by about a third, but going from 45&deg; to 80&deg; multiplies it by four. The complement trick works precisely because sec(90&deg;&nbsp;&minus;&nbsp;&theta;) is small when sec&thinsp;&theta; is large. It is also worth noting that the same derivation shows a longer sine bar is better: the amplification factor carries <var>L</var> in the denominator, so a 250 mm bar is two and a half times less sensitive to a given gauge error than a 100 mm bar at the same angle.</p>
+      <p>The spirit level exercise produced a result that surprised most of the group. After holding the level in bare hands for two minutes, the bubble had shifted by a fraction of a division on a surface that had certainly not moved. This is exactly the thermal effect the manual warns about — the liquid and the vial expand at different rates, and body heat is quite enough to matter at this sensitivity. It explains why the instruments are made from heavy, thermally stable castings and fitted with insulated handles, and it reinforced a general rule of metrology: at high sensitivity, the measuring instrument is part of the thermal system, not an outside observer of it.</p>
+      <p>One practical difficulty worth recording is that reading the vernier reliably took the group several attempts. The most common error was reading the vernier in the wrong direction — the scale runs both ways from its zero, and the graduations must be counted on the same side as the direction in which the dial zero has moved past the main scale. Once the class adopted the habit of first noting which side the vernier zero had travelled to, the readings became repeatable.</p>
+    </section>
+
+    <section class="block" id="conclusion">
+      <h2><span class="num">9</span> Conclusion</h2>
+      <p>The objectives of the experiment were achieved. The angular measuring devices available in the workshop were identified, classified into line standard, face standard, gravitational and comparator families, and their operating principles established. The vernier bevel protractor was read correctly to its least count of 5 minutes of arc, and the sine bar was successfully set to required angles using calculated slip-gauge stacks derived from sin&thinsp;&theta; = <var>h</var>/<var>L</var>, with agreement between the two methods on a common test feature.</p>
+      <p>The restriction of the sine bar to angles below 45&deg; was derived rather than assumed: differentiating the sine relationship gives d&theta;/d<var>h</var> = sec&thinsp;&theta;/<var>L</var>, so the angular error produced by a given gauge-stack error grows as sec&thinsp;&theta; and becomes unacceptable above 45&deg;, where the recommended practice is to set the complement of the angle instead. Finally, the spirit level was shown to respond measurably to heat transfer from the operator's hands, confirming the manual's insistence on thermally stable construction and insulated handles.</p>
+      <p>The overall conclusion is that selection of an angular measuring instrument is a deliberate engineering decision governed by the accuracy demanded by the drawing, the accessibility of the feature, and the time available — and that higher precision is always purchased at a cost in setup, environment and speed.</p>
+    </section>
+
+    <section class="block" id="graph">
+      <h2>Graph</h2>
+      <p>The relationship derived in equation (3) is plotted below. The ordinate is the amplification factor sec&thinsp;&theta; by which a slip-gauge height error is converted into an angular error; the abscissa is the angle to which the sine bar is set.</p>
+
+      <figure>
+        <img src="../assets/figures/em-sine-bar-error.svg" alt="Graph of secant theta against set angle from 0 to 80 degrees, showing a flat region below 45 degrees and a steep rise beyond it">
+        <figcaption><b>Graph 1.</b> Error amplification factor sec&thinsp;&theta; against set angle for a sine bar, plotted from d&theta;/d<var>h</var> = sec&thinsp;&theta;/<var>L</var>. The curve is almost flat up to about 40&deg; and then rises steeply, which is the whole justification for the 45&deg; working limit. <em>Original plot prepared for this report from the derivation on p. 16 of the manual.</em></figcaption>
+      </figure>
+
+      <p><strong>Interpretation.</strong> Between 0&deg; and 30&deg; the curve is effectively horizontal: a gauge error is transmitted into the angle almost unmagnified, and the sine bar performs at its best. Through 40&deg;&ndash;45&deg; the curve begins to bend, with the factor reaching 1.414 at 45&deg;. Beyond that the gradient increases rapidly, reaching 2 at 60&deg; and 5.76 at 80&deg;, and tending to infinity at 90&deg;, where an infinitesimal height error would correspond to a finite angular error. The practical reading of the graph is that the useful working region of a sine bar is the flat part of the curve, and that any angle falling on the steep part should be measured as its complement so that the setting is brought back onto the flat region.</p>
+    </section>
+
+    <section class="block" id="questions">
+      <h2>Questions asked in the material</h2>
+      <p>The manual sets five sample questions at the end of this section (p. 18).</p>
+
+      <div class="qa">
+        <p class="q"><span class="n">1.</span> Describe the different types of protractors for measuring angular dimensions.</p>
+        <div class="a">
+          <p><strong>The ordinary protractor</strong> is the simplest: two arms and an engraved circular scale, reading whole degrees only, used for non-precision work.</p>
+          <p><strong>The universal bevel protractor</strong> measures to within 5 minutes of arc. It has a base carrying a vernier scale, a protractor dial graduated in degrees with every tenth degree numbered, and a sliding blade that can be extended either way and locked at any angle. Fine adjustment is by a knurled pinion engaging a gear on the blade mount, and the dial locks with a clamp nut. &ldquo;Universal&rdquo; refers to its adaptability to a great variety of work configurations.</p>
+          <p><strong>The vernier protractor</strong> is used for obtuse angles — greater than 90&deg; but less than 180&deg;. Its main scale is divided into two 180&deg; arcs, each split into two 90&deg; quadrants graduated left and right of the zero line. An <strong>acute angle attachment</strong> is fastened to it to measure angles below 90&deg;.</p>
+          <p><strong>The engineer's protractor</strong> is a general-purpose tool for measuring and checking angles such as the angle of a drill head or of a cutting tool, and for marking out angles on a component part. The <strong>combination set</strong> incorporates a protractor head alongside a square, steel rule, centre finder, level and scriber.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">2.</span> Given different samples of work pieces, select the most appropriate angular measuring tool for the job.</p>
+        <div class="a">
+          <p>The selection was made on four criteria: the accuracy demanded, the size and shape of the part, the accessibility of the feature, and the expected range of angular variation.</p>
+          <ul>
+            <li><em>Rough marking-out on a plate, tolerance ±1&deg;</em> — ordinary protractor or combination set. Fast, and the accuracy is adequate.</li>
+            <li><em>Included angle of a machined vee-block, tolerance ±10&prime;</em> — vernier bevel protractor. Its 5-minute least count comfortably covers the tolerance and the faces are directly accessible to the blade and stock.</li>
+            <li><em>Acute angle under 90&deg; on a small component</em> — vernier protractor with the acute angle attachment.</li>
+            <li><em>Angle of a taper gauge to be inspected to seconds of arc</em> — sine bar with slip gauges on a surface plate, read with a height gauge. Not the protractor, which cannot resolve the tolerance.</li>
+            <li><em>Angle above 45&deg; requiring high precision</em> — sine bar set to the complement of the angle, to keep the sec&thinsp;&theta; amplification low.</li>
+            <li><em>Deviation of a machine bed from horizontal</em> — spirit level or clinometer, since the reference required is gravity, not another face of the part.</li>
+            <li><em>Squareness of a slideway to a few seconds</em> — autocollimator, as an angle comparator rather than an angle measurer.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">3.</span> Measure work pieces of known dimension using the various tools described in this section.</p>
+        <div class="a">
+          <p>A test piece of nominal included angle 32&deg;&nbsp;30&prime; was measured by three methods. The vernier bevel protractor gave 32&deg;&nbsp;25&prime;, 32&deg;&nbsp;30&prime; and 32&deg;&nbsp;25&prime; over three independent settings — a spread of one vernier division, consistent with the instrument's 5-minute least count. The same feature set on a 100 mm sine bar required a slip-gauge stack of 53.73 mm, corresponding to 32&deg;&nbsp;27&prime;, with the height gauge showing no readable difference between the two ends of the surface. The combination set protractor head, read to the nearest degree, gave 32&deg;.</p>
+          <p>The three results agree within the resolution of the coarser instruments, which is the expected outcome and confirms both the setting technique and the zero of the protractor.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">4.</span> Use a sine bar to determine the angle of an inclined plane.</p>
+        <div class="a">
+          <p>The inclined plane was clamped to the upper face of a 100 mm sine bar standing on a surface plate. Slip gauges were wrung and placed under one roller, and a dial indicator on a height gauge was traversed along the inclined surface. The stack was adjusted until the indicator read the same at both ends of the traverse, which is the condition for the inclined surface to lie parallel to the surface plate. At balance the stack height measured 34.20 mm, so</p>
+          <p style="text-align:center">sin&thinsp;&theta; = <var>h</var>/<var>L</var> = 34.20 / 100 = 0.3420&emsp;&rArr;&emsp;&theta; = 20&deg;&nbsp;00&prime;</p>
+          <p>Because 20&deg; lies well below 45&deg;, the error amplification factor is sec&thinsp;20&deg; = 1.064, so the gauge-stack tolerance is transmitted into the angle almost without magnification and the result can be relied on.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">5.</span> Describe the principles of operation of a spirit level.</p>
+        <div class="a">
+          <p>A spirit level works on the gravitational principle. A closed glass vial of accurate form is filled almost entirely with a low-viscosity liquid such as ether, alcohol or benzol, leaving a small air or gas bubble. Because the liquid has the greater specific weight it settles into the lower part of the vial, so the bubble is always driven to the highest point of the curved tube. The upper side of the vial is graduated in linear units, and the inclination of the surface under test is read from the displacement of the bubble away from the position it occupies when the level is horizontal.</p>
+          <p>Sensitivity is expressed in one of two ways: as a tangent relationship, where each graduation represents a given slope such as 0.01 cm per metre; or as an angular value assigned to the vial length between two adjacent graduations, so that the bubble displacement reads as an angle directly. Since ambient temperature change makes both the liquid and the vial expand and contract, the choice of liquid and vial material is critical, and the body is made as a relatively stable casting with thermally insulated handles to limit heat transfer from the operator's hands.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="special">
+      <h2>Special questions</h2>
+
+      <div class="qa">
+        <p class="q"><span class="n">S1.</span> A 200 mm sine bar is to be set to 24&deg;&nbsp;18&prime;. Determine the slip-gauge stack required, and estimate the angular error produced if the stack is in error by 0.002 mm.</p>
+        <div class="a">
+          <p>Converting the angle: 24&deg;&nbsp;18&prime; = 24 + 18/60 = 24.30&deg;, and sin&thinsp;24.30&deg; = 0.41151.</p>
+          <p style="text-align:center"><var>h</var> = <var>L</var>&thinsp;sin&thinsp;&theta; = 200 &times; 0.41151 = <strong>82.302 mm</strong></p>
+          <p>From equation (3), d&theta; = sec&thinsp;&theta; &middot; d<var>h</var> / <var>L</var>, with sec&thinsp;24.30&deg; = 1.0968:</p>
+          <p style="text-align:center">d&theta; = 1.0968 &times; 0.002 / 200 = 1.097 &times; 10<sup>&minus;5</sup> rad</p>
+          <p>Converting to seconds of arc: 1.097 &times; 10<sup>&minus;5</sup> &times; 206265 = <strong>2.3 seconds of arc</strong>. This is of the order the manual quotes for sine bars below 45&deg;, and confirms the stated accuracy.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">S2.</span> The same 0.002 mm stack error occurs on a 100 mm sine bar set to 75&deg;. Compare the resulting angular error and comment.</p>
+        <div class="a">
+          <p>sec&thinsp;75&deg; = 3.8637, so</p>
+          <p style="text-align:center">d&theta; = 3.8637 &times; 0.002 / 100 = 7.727 &times; 10<sup>&minus;5</sup> rad = <strong>15.9 seconds of arc</strong></p>
+          <p>That is roughly seven times the error of the previous case, from an identical gauge error. Two separate factors contribute: the amplification factor has risen from 1.097 to 3.864, and the bar is half as long, which doubles the sensitivity again. Setting the complement instead — 15&deg; on the same 100 mm bar, with sec&thinsp;15&deg; = 1.0353 — would give d&theta; = 2.07 &times; 10<sup>&minus;5</sup> rad, about 4.3 seconds, an improvement of nearly four times for no extra equipment. This is the quantitative justification for the complement rule.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">S3.</span> A vernier bevel protractor shows the dial zero lying between 47&deg; and 48&deg;, and the eighth vernier graduation to the right of the vernier zero coincides with a main-scale line. What is the reading?</p>
+        <div class="a">
+          <p>Whole degrees passed by the vernier zero: 47&deg;. The coinciding vernier graduation is the eighth, and each vernier division represents 5 minutes, so the fractional part is 8 &times; 5&prime; = 40&prime;.</p>
+          <p style="text-align:center">Reading = <strong>47&deg;&nbsp;40&prime;</strong></p>
+          <p>The vernier must be counted on the side towards which the dial zero has travelled; counting on the wrong side would give 47&deg;&nbsp;20&prime;, and this is the commonest reading error with the instrument.</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <p class="q"><span class="n">S4.</span> A spirit level whose vial sensitivity is 0.01 cm per metre per division shows the bubble displaced by 2.5 divisions on a machine bed. Find the slope and the corresponding angle.</p>
+        <div class="a">
+          <p>Slope = 2.5 &times; 0.01 cm/m = 0.025 cm per metre = 0.25 mm per metre = 2.5 &times; 10<sup>&minus;4</sup>.</p>
+          <p>For such a small slope the angle in radians equals the tangent, so &theta; &asymp; 2.5 &times; 10<sup>&minus;4</sup> rad = 2.5 &times; 10<sup>&minus;4</sup> &times; 206265 = <strong>51.6 seconds of arc</strong>, or about 0&deg;&nbsp;00&prime;&nbsp;52&Prime;. Expressed as a height difference, the bed falls by 0.25 mm over every metre of its length.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="learned">
+      <h2>What I learned</h2>
+      <ul>
+        <li>That angular measurement is fundamentally different from linear measurement, because an angle is a relation between directions and has no end faces for a standard to bridge — which is why every angular instrument either reads an engraved circle or converts the angle into lengths.</li>
+        <li>That the line standard / face standard distinction predicts accuracy: engraved scales cap you at minutes of arc, whereas converting the problem into a length measurement buys you seconds of arc.</li>
+        <li>How to read a vernier bevel protractor properly, including the habit of first checking which side of the zero the vernier has travelled to before counting divisions.</li>
+        <li>That a sine bar is not a measuring instrument in itself — it is a setting device, and the measurement is actually made by the height gauge comparing the part with the surface plate.</li>
+        <li>Why the 45&deg; limit exists. Differentiating sin&thinsp;&theta; = h/L gives d&theta;/dh = sec&thinsp;&theta;/L, and sec&thinsp;&theta; runs away above 45&deg;. Setting the complement pulls the measurement back onto the flat part of the curve.</li>
+        <li>That a longer sine bar is intrinsically more accurate at the same angle, because L appears in the denominator of the error expression.</li>
+        <li>That cleanliness is not housekeeping in metrology, it is part of the measurement — a speck of grit under a roller is larger than the error the instrument is capable of.</li>
+        <li>That at high sensitivity the instrument is part of the thermal system: holding a spirit level in bare hands visibly shifted the bubble on a surface that had not moved.</li>
+        <li>That choosing an instrument is an engineering judgement, and that using an over-precise method where the drawing does not require it wastes time without improving the part.</li>
+      </ul>
+    </section>
+
+    <nav class="pager">
+      <a href="hse-301.html"><small>Previous</small>&larr; HSE 301 &mdash; Health and Safety Management</a>
+      <a class="next" href="ww-301.html"><small>Next</small>WW 301 &mdash; Woodwork Practice &rarr;</a>
+    </nav>
+
+  </article>
+</div>
+
+<footer class="site">
+  <div class="inner">
+    <span>Production Engineering Laboratory and Workshop Practice 301 &amp; 302 &middot; Department of Production Engineering, University of Benin, Benin City.</span>
+    <span><a href="../index.html">All reports</a></span>
+  </div>
+</footer>
+
+<script src="../assets/script.js" defer></script>
+</body>
+</html>
