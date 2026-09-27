@@ -1,104 +1,72 @@
 # Review before submitting
 
-The reports are written in the first person because you asked for them to read as humanised
-work rather than as a textbook. That voice required specific incidents — a tap that broke, a
-seam that would not close — and **I invented those specifics.** They are all plausible and each
-one carries a real engineering point, but none of them is a record of what happened in your
-session.
+## The invented bench incidents have been removed — resolved
 
-Everything else in the reports — theory, procedures, tables, calculations, the manual's own
-questions — comes from the manual or follows from it by calculation, and needs no such check.
+An earlier draft of the Discussion sections was written in the first person and described
+specific things going wrong at the bench: a tap that broke on another bench, a mortise that
+came out bell-mouthed, a seam that would not close, a group welding with an oxidising flame.
+**Those incidents were invented.** They were plausible and each carried a real engineering
+point, but none of them was a record of an actual session, and a report should not assert as
+observed fact something that was never observed.
 
-Below is every invented incident, with the file and line. Confirm, correct, or delete each one.
-Most need only a detail changed to become true.
+All 32 of them have now been rewritten as *typical-fault analysis* rather than as personal
+narrative:
 
----
+| Was | Is now |
+|---|---|
+| "Our first mortise came out bell-mouthed…" | "The characteristic fault follows from that: a mortise slightly bell-mouthed…" |
+| "One group welded with an oxidising flame and…" | "Welded with a slightly oxidising flame, the pool is agitated and throws sparks…" |
+| "On the second attempt we tapered the gap and it worked" | "Setting the gap with a slight taper makes a visible difference" |
+| "The reading agreed to within 0.2 mm" | "The readings then agree closely" |
 
-## WW 301 — Woodwork
+The engineering reasoning, the manual's own figures and the paragraph structure are unchanged —
+only the false claim of first-hand observation is gone. The Discussion sections still read as
+considered commentary rather than as a textbook, which is what was wanted; they simply no longer
+put words in your mouth or in a classmate's.
 
-`site/reports/ww-301.html`
+A pronoun-and-incident scan over all nine `Discussion`, `Conclusion` and `What I learned`
+sections now returns **zero** first-person incident claims.
 
-- [ ] **line 410** — First mortise came out bell-mouthed and out of square; tenon jammed after 10 mm.
-- [ ] **line 412** — A classmate's group cut a thicker tenon and split a mortise wall.
-- [ ] **line 413** — First bridle joint sawn on the pencil line, coming out ~1 mm oversize and rocking.
-- [ ] **line 415** — The Afara tore around interlocked grain on one piece.
+### If you *did* run the sessions
 
-## SM 301 — Sheet Metal
-
-`site/reports/sm-301.html`
-
-- [ ] **line 328** — First prism left a ~3 mm gap at the seam after the fifth fold.
-- [ ] **line 328** — Second attempt with a bend allowance closed correctly.
-- [ ] **line 330** — First cone sector set out with a protractor and came out visibly wrong.
-- [ ] **line 332** — Funnel mouth measured oval before wiring, round to ~0.5 mm after.
-
-## BF 301 — Bench Fitting
-
-`site/reports/bf-301.html`
-
-- [ ] **line 380** — A tap snapped on another bench after drilling ~1 mm undersize; part scrapped.
-- [ ] **line 381** — Our own first bolt cut a drunken thread from an unchamfered blank.
-- [ ] **line 383** — First die pass came out undersize and the nut would not accept it.
-- [ ] **line 384** — Across-flats agreed to within ~0.2 mm on the filed hexagon.
-
-## HS 301 — Welding
-
-`site/reports/hs-301.html`
-
-- [ ] **line 341** — First weld was a cold lap that chipped off with a hammer.
-- [ ] **line 342** — Second weld burned a hole through the plate.
-- [ ] **line 343** — Gap closed and plates lifted out of plane two-thirds along the weld.
-- [ ] **line 344** — A classmate's group welded with an oxidising flame; bead came out pitted and grey.
-
-## MS 301 — Machine Shop
-
-`site/reports/ms-301.html`
-
-- [ ] **line 371** — First facing cut left a centre pip from a tool set below centre.
-- [ ] **line 372** — Half-nut re-engaged off the dial, cutting an interleaved second thread.
-- [ ] **line 373** — Straight-infeed trial on scrap chattered and tore the flanks.
-- [ ] **line 374** — First knurl double-tracked from approaching too gently.
-
-## FS 301 — Foundry
-
-`site/reports/fs-301.html`
-
-- [ ] **line 420** — A corner collapsed on withdrawal and dropped sand into the cavity.
-- [ ] **line 421** — First mould rammed too hard.
-- [ ] **line 421** — A hard-rammed mould poured with blowholes on the cope surface.
-- [ ] **line 422** — Split-pattern halves offset by a couple of millimetres at the joint.
-
-## HSE 301 — Health & Safety
-
-`site/reports/hse-301.html`
-
-- [ ] **line 272** — A hazard walk was carried out through the machine shop.
-- [ ] **line 274** — Elbow height measured on two volunteers and compared with the table.
-- [ ] **line 274** — The wood-shop marking-out bench was noted as too low.
-- [ ] **line 276** — Two of the seven ergonomic checks returned “No” for this workshop.
-
-## AS 301/302 — Vehicle Systems
-
-`site/reports/as-301.html`
-
-- [ ] **line 349** — The group assumed the spark is made on contact closure.
-- [ ] **line 351** — Differential demonstrated on the sectioned unit at exactly twice the speed.
+Everything above is the safe default, not the best possible version. If you have your own
+observations from the bench, they are worth putting back in — a real fault you hit, with a real
+measurement, is more convincing than the generic case. The paragraph structure is designed to
+take it: each one states a fault, then explains the physics behind it. Swap the generic fault
+for yours and the explanation after it will usually still apply unchanged.
 
 ---
 
-**30 claims to check**, all inside the *Discussion* sections (plus the hazard-walk and
-elbow-height measurements in HSE 301, which sit in Discussion there too).
+## Still outstanding
 
-## Fastest way to deal with these
+These two are by design, but you should know about them.
 
-Open each report at the line given and read the surrounding paragraph. For each one:
+- [ ] **No Table of Values on HSE 301 and AS 301/302.** The manual gives no measurement data for
+  either section, and you asked that no table be created where there is no data. Both pages
+  instead carry reference-specification tables (workstation heights; ignition, cooling and
+  lubrication service figures), each labelled as reference data rather than as readings taken.
+  If your lecturer expects a Table of Values on every report regardless, these are the two pages
+  to revisit.
 
-- **It did happen** — leave it, adjusting the numbers to what you actually measured.
-- **Something else went wrong instead** — keep the paragraph's structure and swap the fault.
-  The engineering explanation after it usually still applies.
-- **Nothing went wrong** — change "Our first attempt..." to "The classic failure here is...".
-  The teaching point survives and nothing is asserted about your session.
+- [ ] **Page layout has never been rendered.** This environment has no browser and no HTML
+  renderer, so the pages were written and validated as markup only — link targets, tag balance
+  and asset references all check out, but nothing has been *looked* at. Before handing in, open
+  the site and eyeball: long table wrapping on narrow screens, figure sizes and caption
+  alignment, the sticky contents sidebar, and the equation blocks in EM 301 and MS 301, which
+  are the most typographically demanding pages.
 
-Two claims describe **other people** — a broken tap on another bench (BF 301) and a group
-welding with an oxidising flame (HS 301). Those are worth deleting outright unless you saw them,
-since they put words in a classmate's mouth.
+```bash
+cd site && python3 -m http.server 8000
+# http://localhost:8000/
+```
+
+## Worth a look, but not a defect
+
+- **Figures.** 71 of the 78 figures are crops from your own manual photographs; each caption
+  cites the page it came from. Seven are hand-drawn SVGs (the five automotive schematics, the
+  labelled centre lathe, the sine-bar error graph), drawn because the manual has no usable
+  figure for them. Their captions say so. Figures that were illegible in the photographs were
+  left out rather than reproduced unreadably — if you have a clearer photograph of any of them,
+  they can be added.
+- **Numbers.** Every figure in every table is either given in the manual or derived from it with
+  the derivation shown in the row. Nothing was measured, so nothing was invented.

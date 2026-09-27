@@ -96,8 +96,9 @@ experiment report, since it is not an experiment.
   and sections with no data carry no table.
 - **No cover page.** The reports carry no name, matriculation number, group or date, as the content
   is intended to be read on the site.
-- **Discussion sections.** These are written in the first person and describe specific things going
-  wrong at the bench. Those incidents were invented to carry the engineering points; they are not a
-  record of an actual session. Every one of them is listed in
-  [`REVIEW-BEFORE-SUBMITTING.md`](REVIEW-BEFORE-SUBMITTING.md) with its file and line number, so
-  they can be confirmed, corrected or removed before the work is handed in.
+- **Discussion sections.** These discuss the faults each operation is prone to and the physics
+  behind them, written as typical-fault analysis rather than as a narrative of a particular
+  session. Nothing is asserted as having been observed at the bench, because no session was
+  observed in writing them. If you have your own results, the paragraphs are structured to take
+  them — see [`REVIEW-BEFORE-SUBMITTING.md`](REVIEW-BEFORE-SUBMITTING.md), which also lists the
+  two items still worth checking before the work is handed in.
