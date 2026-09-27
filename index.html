@@ -143,6 +143,9 @@
     .special { background: color-mix(in srgb, var(--gold) 7%, var(--paper)); border-color: color-mix(in srgb, var(--gold) 33%, var(--line)); }
     .special .section-kicker { color: var(--gold); }
     .omitted { border: 1px dashed var(--line-dark); border-radius: 10px; padding: 15px 16px; color: var(--muted); background: var(--canvas); }
+    .section-jump { display: flex; gap: 6px; overflow-x: auto; padding: 8px; margin: 12px 0 18px; background: var(--paper); border: 1px solid var(--line); border-radius: 11px; box-shadow: 0 3px 12px rgba(16,42,67,.04); scrollbar-width: thin; }
+    .section-jump a { white-space: nowrap; text-decoration: none; color: var(--muted); border: 1px solid transparent; border-radius: 7px; padding: 6px 9px; font-size: 11px; font-weight: 800; }
+    .section-jump a:hover, .section-jump a:focus { color: var(--blue); background: var(--blue-soft); border-color: var(--line); outline: none; }
     .footer { max-width: var(--max); margin: 12px auto 44px; padding: 0 24px; color: var(--muted); font-size: 12px; }
     .to-top { position: fixed; right: 20px; bottom: 20px; display: none; border: 0; border-radius: 50%; width: 42px; height: 42px; background: var(--blue); color: white; cursor: pointer; box-shadow: var(--shadow); font-weight: 900; }
     .to-top.show { display: block; }
@@ -626,8 +629,32 @@
     sideLinks.forEach(link => {
       link.addEventListener('click', event => { event.preventDefault(); showPanel(link.dataset.target); });
     });
-    const initial = location.hash.slice(1);
-    if (initial && document.getElementById(initial)) showPanel(initial, false);
+
+    // Add a compact section navigator to every experiment, mirroring the reference site's easy-to-scan structure.
+    document.querySelectorAll('.experiment-panel').forEach(panel => {
+      const jump = document.createElement('nav');
+      jump.className = 'section-jump';
+      jump.setAttribute('aria-label', 'Sections in this experiment');
+      panel.querySelectorAll('.section-block').forEach(section => {
+        const link = document.createElement('a');
+        link.href = '#' + section.id;
+        link.textContent = section.querySelector('.section-kicker')?.textContent || 'Section';
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          history.replaceState(null, '', '#' + section.id);
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        jump.appendChild(link);
+      });
+      panel.querySelector('.exp-head').after(jump);
+    });
+
+    const hashElement = document.getElementById(location.hash.slice(1));
+    const initialPanel = hashElement?.closest('.experiment-panel')?.id || hashElement?.id || 'home';
+    if (document.getElementById(initialPanel)) showPanel(initialPanel, false);
+    if (hashElement && hashElement.classList.contains('section-block')) {
+      setTimeout(() => hashElement.scrollIntoView({ block: 'start' }), 50);
+    }
     document.getElementById('theme-toggle').addEventListener('click', () => {
       const dark = document.documentElement.dataset.theme === 'dark';
       document.documentElement.dataset.theme = dark ? '' : 'dark';
