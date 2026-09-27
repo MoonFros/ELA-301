@@ -27,7 +27,7 @@
       <path d="M-27 0 h9 M18 0 h9 M0 -27 v9 M0 18 v9"/>
     </g>
     <text class="lbl" x="0" y="52" text-anchor="middle">Flywheel</text>
-    <text class="sm" x="0" y="66" text-anchor="middle">smooths torque</text>
+    <text class="sm" x="-10" y="66" text-anchor="middle">smooths torque</text>
   </g>
 
   <!-- Clutch -->
@@ -35,7 +35,7 @@
     <rect class="bx" x="-20" y="-32" width="40" height="64" rx="4"/>
     <path d="M-8 -32 v64 M8 -32 v64" stroke="#16202b" stroke-width="1.2"/>
     <text class="lbl" x="0" y="52" text-anchor="middle">Clutch</text>
-    <text class="sm" x="0" y="66" text-anchor="middle">connects / disconnects</text>
+    <text class="sm" x="10" y="66" text-anchor="middle">connects / disconnects</text>
   </g>
 
   <!-- Gearbox -->
